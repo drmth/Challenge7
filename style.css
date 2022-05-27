@@ -1,4 +1,39 @@
 .row{
     height: 80px;
     border-width: 2px;
+    animation: color-change-animation 1s ease-in-out infinite;
+}
+
+.container-fluid {
+    animation: move-hero 5s ease-in-out infinite;
+}
+
+@keyframes color-change-animation {
+    0%{
+        background: #f19900;
+    }
+    25%{
+        background: #ffa500;
+    }
+    50%{
+        background: #ffb11b;
+    }
+    75%{
+        background: #ffbd2c;
+    }
+    100%{
+        background: #ffc93b;
+    }
+}
+
+@keyframes move-hero {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
